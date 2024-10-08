@@ -92,6 +92,10 @@
     line-height: 20px;
 }
 
+.about_text h2 {
+    line-height: 1.2;
+}
+
 .about_text p {
     color: var(--secondary);
     text-align: start;
