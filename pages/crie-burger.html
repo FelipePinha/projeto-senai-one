@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    <title>Potes Dourados</title>
+
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/crie-burger.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+</head>
+<body>
+
+    <header>
+        <nav class="index_nav">
+            <a href="../index.html" class="logo">
+                <img src="../images/logo.webp" alt="logo da empresa">
+            </a>
+
+            <ul>
+                <li><a href="./cones.html">Cones</a></li>
+                <li><a href="./almoco.html">Almoço</a></li>
+                <li><a href="./vegano.html">Vegano</a></li>
+                <li><a href="./fast-food.html">Fast Food</a></li>
+            </ul>
+
+            <span></span>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="flex_burger">
+            <div class="burger_img">
+                <img src="../images/fast-food/crack_burger.jpg" alt="">
+            </div>
+            <form>
+                <h1>Crie seu hamburguer</h1>
+
+                <div class="form-control">
+                    <h2>Tamanho</h2>
+
+                    <div class="flex-form">
+                        <label for="small">
+                            <span class="radio">
+                                <span class="radio-checked"></span>
+                            </span>
+                            Pequeno
+                            <input type="radio" name="size" id="small" value="small">
+                        </label>
+
+                        <label for="medium">
+                            <span class="radio">
+                                <span class="radio-checked"></span>
+                            </span>
+                            Médio
+                            <input type="radio" name="size" id="medium" value="medium">
+                        </label>
+
+                        <label for="big">
+                            <span class="radio">
+                                <span class="radio-checked"></span>
+                            </span>
+                            Grande
+                            <input type="radio" name="size" id="big" value="big">
+                        </label>
+                    </div>
+                </div>
+                <div class="form-control">
+                    <h2>Ingredientes</h2>
+
+                    <div class="flex-form">
+                        <label for="meat">
+                            <span class="radio">
+                                <span class="radio-checked"></span>
+                            </span>
+                            Carne
+                            <input type="radio" name="meat_type" id="meat" value="meat">
+                        </label>
+
+                        <label for="chicken">
+                            <span class="radio">
+                                <span class="radio-checked"></span>
+                            </span>
+                            Frango
+                            <input type="radio" name="meat_type" id="chicken" value="chicken">
+                        </label>
+                    </div>
+                    <div class="flex-form">
+                        <label for="onion">
+                            <span class="check">
+                                <span class="check-checked"></span>
+                            </span>
+                            Cebola
+                            <input type="checkbox" id="onion" value="onion">
+                        </label>
+
+                        <label for="salad">
+                            <span class="check">
+                                <span class="check-checked"></span>
+                            </span>
+                            Salada
+                            <input type="checkbox" id="salad" value="salad">
+                        </label>
+
+                        <label for="tomato">
+                            <span class="check">
+                                <span class="check-checked"></span>
+                            </span>
+                            Tomate
+                            <input type="checkbox" id="tomato" value="tomato">
+                        </label>
+                    </div>
+                </div>
+                <div class="form-control">
+                    <h2>Molhos</h2>
+
+                    <div class="flex-form">
+                        <label for="ketchup">
+                            <span class="check">
+                                <span class="check-checked"></span>
+                            </span>
+                            Ketchup
+                            <input type="checkbox" id="ketchup" value="ketchup">
+                        </label>
+
+                        <label for="mustard">
+                            <span class="check">
+                                <span class="check-checked"></span>
+                            </span>
+                            Mostarda
+                            <input type="checkbox" id="mustard" value="mustard">
+                        </label>
+                    </div>
+                </div>
+
+                <button type="submit">Fazer pedido</button>
+            </form>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer_box">
+            <div class="footer_flex_space">
+                <div class="flex_row_footer">
+                    <div class="flex_col_footer">
+                        <h3>Quem somos</h3>
+                        <a href="#">Institucional</a>
+                        <a href="#">Privacidade</a>
+                        <a href="#">Trabalhe conosco</a>
+                    </div>
+                    <div class="flex_col_footer">
+                        <h3>Para você</h3>
+                        <a href="./pages/cones.html">Cones</a>
+                        <a href="./pages/cones.html">Almoço</a>
+                        <a href="./pages/cones.html">Vegano</a>
+                        <a href="./pages/cones.html">Fast Food</a>
+                        <a href="./pages/cones.html">Crie seu hamburguer</a>
+                    </div>
+                    <div class="flex_col_footer">
+                        <h3>Contato</h3>
+                        <a href="#">Contato</a>
+                    </div>
+                </div>
+                <div class="flex_col_footer align">
+                    <h3>Redes</h3>
+                    <div class="flex_row_items">
+                        <a href="#"><i style="font-size: 22px;" class="fa fa-brands fa-instagram"></i></a>
+                        <a href="#"><i style="font-size: 22px;" class="fa fa-brands fa-whatsapp"></i></a>
+                        <a href="#"><i style="font-size: 22px;" class="fa fa-brands fa-facebook-f"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer_flex_space">
+            <div class="flex_row_items">
+                <a href="#"><img style="width: 20px;" src="../images/google-play.png" alt="google play"></a>
+                <a href="#"><img style="width: 25px;" src="../images/app-store.png" alt="google play"></a>
+            </div>
+            <p>© Potes Dourados 2024</p>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/523e6a491b.js" crossorigin="anonymous"></script>
+
+</body>
+</html>

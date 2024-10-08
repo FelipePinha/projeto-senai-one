@@ -1,0 +1,18 @@
+:root {
+    --primary: #2e211c;
+    --secondary: #f0cd30;
+    --regular: #5f200d;
+    --dark-yellow: #caac28;
+    --orange: #c03a11;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Sansita", sans-serif;
+}
+
+body {
+    background-color: var(--primary);
+}

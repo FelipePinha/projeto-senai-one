@@ -1,0 +1,58 @@
+.banner {
+    background-color: var(--secondary);
+}
+
+.banner {
+    display: flex;
+    align-items: center;
+    overflow-x: hidden;
+    padding: 10px;
+    white-space: nowrap;
+    gap: 1rem;
+}
+
+.banner_text {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-weight: 700;
+    color: var(--primary);
+    font-size: 18px;
+    width: 100%;
+}
+
+.banner_animation {
+    max-width: 1440px;
+    overflow: hidden;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.banner_animation_inner {
+    display: flex;
+    gap: 1rem;
+    animation: 15s carousel infinite linear;
+}
+
+
+@keyframes carousel {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.banner_divider img {
+    width: 30px;
+}
+
+@media(max-width: 768px) {
+    .banner {
+        display: none;
+    }
+}

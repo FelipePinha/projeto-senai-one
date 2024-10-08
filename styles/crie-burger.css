@@ -1,0 +1,185 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.flex_burger {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.burger_img {
+    width: 325px;
+    border-radius: 8px;
+}
+
+.burger_img img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+form h1 {
+    color: var(--secondary);
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    gap: 15px;
+    width: 100%;
+}
+
+.form-control h2 {
+    color: var(--orange);
+}
+
+.flex-form {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.flex-form label {
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid white;
+    border-radius: 8px;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+.flex-form label:hover {
+    background-color: var(--secondary);
+    border-color: var(--secondary);
+    color: var(--regular);
+}
+
+.flex-form label:hover .radio {
+    border-color: var(--regular);
+}
+
+
+
+.flex-form label:hover .check {
+    border-color: var(--regular);
+}
+
+
+.flex-form label input {
+    display: none;
+}
+
+.radio {
+    width: 20px;
+    height: 20px;
+    border: 1px solid white;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.radio-checked {
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+}
+
+.check {
+    width: 20px;
+    height: 20px;
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.check-checked {
+    width: 12px;
+    height: 12px;
+}
+
+.form-control label:has(input[type="radio"]:checked) .radio {
+    border-color: var(--regular);
+}
+
+.form-control label:has(input[type="checkbox"]:checked) .check {
+    border-color: var(--regular);
+}
+
+.form-control label:has(input[type="radio"]:checked) .radio .radio-checked { 
+    background-color: var(--regular);
+} 
+
+.form-control label:has(input[type="checkbox"]:checked) .check .check-checked {
+    background-color: var(--regular);
+}
+
+.form-control label:has(input[type="radio"]:checked):hover .radio .radio-checked { 
+    background-color: var(--regular);
+} 
+
+.form-control label:has(input[type="checkbox"]:checked):hover .check .check-checked {
+    background-color: var(--regular);
+}
+
+.form-control label:has(input[type="checkbox"]:checked) {
+    background-color: var(--secondary);
+    color: var(--regular);
+    border-color: var(--secondary);
+}
+
+.form-control label:has(input[type="radio"]:checked) {
+    background-color: var(--secondary);
+    color: var(--regular);
+    border-color: var(--secondary);
+}
+
+button[type="submit"] {
+    background-color: var(--secondary);
+    color: var(--primary);
+    padding: 10px;
+    border: 0;
+    font-size: 18px;
+    width: 300px;
+    cursor: pointer;
+    transition: background-color .2s ease;
+    margin-top: 30px;
+}
+
+button[type="submit"]:hover {
+    background-color: var(--dark-yellow);
+}
+
+@media (max-width: 520px) {
+    .flex-form {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .flex-form label {
+        width: 100%;
+    }
+
+    button[type="submit"] {
+        width: 100%;
+    }
+}
